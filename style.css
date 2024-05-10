@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Estilo básico para a página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para as seções */
+section {
+    padding: 10px;
+    margin-bottom: 1px;
+}
+
+/* Estilo para os cabeçalhos das seções */
+h1, h2 {
+    color: #336e48;
+}
+
+/* Estilo para o texto dos parágrafos */
+p {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para a lista de serviços */
+.servicos {
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            background-color: #dff0d8;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-left: 5px solid #336e48;
+        }
+    }
+}
+
+/* Estilo para o formulário de contato */
+.contato {
+    form {
+        background-color: #ffffffa4;
+        padding: 15px;
+        border: 1px solid #ddd;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    input {
+        &[type="text"],
+        &[type="email"],
+        &[type="tel"],
+        &[type="password"]{
+            width: 98%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+        }
+        &[type="submit"],
+        &[type="reset"] {
+            width: auto;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4e9f6a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        &[type="submit"]:hover,
+        &[type="reset"]:hover {
+            background-color: #3e8e5a;
+        }
+    }
+} 
